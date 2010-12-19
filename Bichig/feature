@@ -8,8 +8,8 @@ feature isol {
     sub ML_A by TITEM_ORHITS.isol;
     sub ML_E by TITEM_ORHITS.isol;
     sub ML_I by TITEM_NUM.isol;
-    sub ML_O by титэм гэдэс.isol;
-    sub ML_U by титэм гэдэс.isol;
+    sub ML_O by TIT_GED.isol;
+    sub ML_U by TIT_GED.isol;
     sub ML_OE by титэм гэдэс оготор сүүл.isol;
     sub ML_UE by титэм гэдэс оготор сүүл.isol;
     sub ML_EE by титэм мойтгор шилбэ оготор сүүл.isol;
@@ -83,7 +83,7 @@ feature init {
     sub ML_A by титэм шүд.init;
     sub ML_E by титэм.init;
     sub ML_I by титэм шилбэ.init;
-    sub [ML_O ML_U] by титэм гэдэс.init;
+    sub [ML_O ML_U] by TIT_GED.init;
     sub [ML_OE ML_UE] by титэм гэдэс шилбэ.init;
     sub ML_EE by титэм мойтгор шилбэ.init;
     sub ML_NA by титэм цэгтэй.init;
@@ -173,7 +173,7 @@ feature calt {
   script mong; 
   lookup calt1 { 
   lookupflag IgnoreMarks;
-    sub ML_UE.init' Й И by титэм гэдэс.init1;
+    sub ML_UE.init' Й И by TIT_GED.init1;
     sub @initials ML_UE.medi' Й И by гэдэс.medi;
     sub @initials [ML_OE ML_UE]' by гэдэс шилбэ.medi1;
     sub ML_NA.medi' @vowel by цэгтэй шүд.medi1;
