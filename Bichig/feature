@@ -4,7 +4,7 @@ feature isol {
   lookupflag IgnoreMarks;
     sub ML_A FVS1 by TITEM_ORHITS.isol1;
     sub ML_UE FVS1 by TGN.isol1;
-    sub ML_QA FVS1 by нум хоёр цэгтэй.isol1;
+    sub ML_QA FVS1 by NUM_2points.isol1;
     sub ML_A by TITEM_ORHITS.isol;
     sub ML_E by TITEM_ORHITS.isol;
     sub ML_I by титэм нум.isol;
