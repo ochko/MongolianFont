@@ -1,42 +1,263 @@
-'А': 'ML_A',
-'Э': 'ML_E',
-'И': 'ML_I',
-'О': 'ML_O',
-'У': 'ML_U',
-'Ө': 'ML_OE',
-'Ү': 'ML_UE',
-'Э.гадаад': 'ML_EE',
-'Н': 'ML_NA',
-'НГ': 'ML_ANG',
-'Б': 'ML_BA',
-'П': 'ML_PA',
-'Х': 'ML_QA',
-'Г': 'ML_GA',
-'М': 'ML_MA',
-'Л': 'ML_LA',
-'С': 'ML_SA',
-'Ш': 'ML_SHA',
-'Т': 'ML_TA',
-'Д': 'ML_DA',
-'Ч': 'ML_CHA',
-'Ж': 'ML_JA',
-'Й': 'ML_YA',
-'Р': 'ML_RA',
-'В': 'ML_WA',
-'Ф': 'ML_FA',
-'KA': 'ML_KA',
-'KHA': 'ML_KHA',
-'TSA': 'ML_TSA',
-'ZA': 'ML_ZA',
-'HAA': 'ML_HAA',
-'ZRA': 'ML_ZRA',
-'LHA': 'ML_LHA',
-'ZHI': 'ML_ZHI',
-'CHI': 'ML_CHI',
-'титэм орхиц': 'TITEM_ORHITS',
-'гэдэс нум': "GEDES_NUM",
-'нум хоёр цэгтэй': 'NUM_2points',
-'титэм нум': 'TITEM_NUM',
-'титэм гэдэс': 'TIT_GED',
-'титэм гэдэс нум': 'TGN',
-'титэм гэдэс оготор сүүл': 'TGOS'
+А:
+  name: ML_A
+  орхиц: fina1
+  сүүл: fina
+  титэм шүд: init
+  титэм орхиц: isol1
+  титэм сүүл: isol
+  дунд1: medi1
+  шилбэ: medi2
+  шүд: medi
+
+Э:
+  name: ML_E
+  орхиц: fina1
+  сүүл: fina
+  эхэнд1: init1
+  титэм: init
+  титэм орхиц: isol
+  шүд: medi
+
+И:
+  name: ML_I
+  нум: fina
+  титэм шилбэ: init
+  титэм нум: isol
+  дунд1: medi1
+  шилбэ: medi
+
+О:
+  name: ML_O
+  адагт1: fina1
+  гэдэс нум: fina
+  титэм гэдэс: init
+  салангид* титэм гэдэс: isol
+  дунд1: medi1
+  гэдэс: medi
+
+У:
+  name: ML_U
+  гэдэс нум: fina
+  титэм гэдэс: init
+  салангид* титэм гэдэс: isol
+  дунд1: medi1
+  гэдэс: medi
+
+Ө:
+  name: ML_OE
+  адагт1: fina1
+  гэдэс нум: fina
+  титэм гэдэс шилбэ: init
+  титэм гэдэс оготор сүүл: isol
+  гэдэс шилбэ: medi1
+  дунд2: medi2
+  гэдэс: medi
+
+Ү:
+  name: ML_UE
+  адагт1: fina1
+  гэдэс нум: fina
+  титэм гэдэс: init1
+  титэм гэдэс шилбэ: init
+  титэм гэдэс нум: isol1
+  титэм гэдэс оготор сүүл: isol
+  гэдэс шилбэ: medi1
+  дунд2: medi2
+  гэдэс: medi
+
+Э.гадаад:
+  name: ML_EE
+  мойтгор шилбэ оготор сүүл: fina
+  титэм мойтгор шилбэ: init
+  титэм мойтгор шилбэ оготор сүүл: isol
+  мойтгор шилбэ: medi
+
+Н:
+  name: ML_NA
+  сүүл: fina
+  эхэнд1: init1
+  титэм цэгтэй: init
+  цэгтэй шүд: medi1
+  цэгтэй сүүл : medi2
+  дунд3: medi3
+  шүд: medi
+  цэгтэй шүд хувилбар1: medifvs1
+
+НГ:
+  name: ML_ANG
+  шүд шилбэ орхиц: fina
+  шүд нум: medi
+
+Б:
+  name: ML_BA
+  адагт1: fina1
+  гэдэс нум орхиц: fina
+  эхэнд: init
+  дунд: medi
+
+П:
+  name: ML_PA
+  жавж гэдэс нум орхиц: fina
+
+Х:
+  name: ML_QA
+  эхэнд1: init1
+  нум шүд: init
+  титэм хагархай гэдэстэй шүд: init
+  нум хоёр цэгтэй: isol1
+  нум богино нуруутай: isol
+  дунд1: medi1
+  дунд2: medi2
+  шүд ахар сүүл: medi3
+  нум: medi
+  хоёр шүд: medi
+
+Г:
+  name: ML_GA
+  шилбэ орхиц: fina1
+  хоёр шүд ахар сүүл: fina
+  шүд ахар сүүл: fina
+  адагтfvs1: finafvs1
+  эхэнд1: init1
+  нум шүд хоёр цэг: init
+  титэм хагархай гэдэстэй шүд хоёр цэгтэй: init
+  нум богино нуруутай: isol
+  хоёр шүд урдаа хоёр цэгтэй: medi1
+  хоёр шүд хоёр цэгтэй: medi1
+  шүд ахар сүүл хоёр цэгтэй : medi2
+  дунд3: medi3
+  хоёр шүд: medi
+
+М:
+  name: ML_MA
+  ахар сүүл гэзэг: fina
+  титэм гэзэг: init
+  шүд гэзэг: medi
+
+Л:
+  name: ML_LA
+  ахар сүүл эвэр: fina
+  ээтгэртэй ахар сүүл эвэр : fina
+  титэм эвэр: init
+  шүд эвэр: medi
+
+С:
+  name: ML_SA
+  адагт1: fina1
+  адагт2: fina2
+  завж ахар сүүл: fina
+  эхэнд: init
+  дунд: medi
+
+Ш:
+  name: ML_SHA
+  завж ахар сүүл ардаа хоёр цэг: fina
+  эхэнд: init
+  дунд: medi
+
+Т:
+  name: ML_TA
+  босоо Д оготор сүүл: fina
+  титэмтэй: init
+  дунд1: medi1
+  дунд: medi
+
+Д:
+  name: ML_DA
+  адагт1: fina1
+  гэдэс сүүл: fina
+  эхэнд1: init1
+  эхэнд: init
+  гогцоотой шилбэ: medi1
+  гэдэс шүд: medi
+  гогцоотой шилбэ хувилбар1: medifvs1
+
+Ч:
+  name: ML_CHA
+  өнцөгт эвэр оготор сүүл: fina
+  эхэнд: init
+  жавьж: medi
+
+Ж:
+  name: ML_JA
+  мохоо эвэр оготор сүүл: fina
+  эхэнд: init
+  нум: medi1
+  дунд: medi
+
+Й:
+  name: ML_YA
+  нум: fina
+  эхэнд1: init1
+  эхэнд: init
+  ээтгэр шилбэ: medi1
+  дунд* нум: medi2
+  шилбэ: medi
+
+Р:
+  name: ML_RA
+  зөрүү шилбэ нум: fina
+  эхэнд: init
+  дунд: medi
+
+В:
+  name: ML_WA
+  гэдэс нум: fina1
+  мойтгор шилбэ оготор сүүл: fina
+  мойтгор шилбэ: init
+  дунд1: medi1
+  дунд* мойтгор шилбэ: medi
+  адагт1: fina1
+
+Ф:
+  name: ML_FA
+  эвэртэй гэдэс нум орхиц: fina
+  эхэнд: init
+  дунд: medi
+
+KA:
+  name: ML_KA
+  адагт: fina
+  эхэнд: init
+  дунд: medi
+
+KHA:
+  name: ML_KHA
+  адагт: fina
+  эхэнд: init
+  дунд: medi
+
+TSA:
+  name: ML_TSA
+  эхэнд: init
+  дунд: medi
+  цагирагтай өгцөгт эвэр оготор сүүл: fina
+
+ZA:
+  name: ML_ZA
+  эхэнд: init
+  дунд: medi
+  зартигтай өнцөгт эвэр оготор сүүл: fina
+
+HAA:
+  name: ML_HAA
+  эхэнд: init
+  дунд: medi
+  адагт: fina
+
+ZRA:
+  name: ML_ZRA
+  эхэнд: init
+  дунд: medi
+  адагт: fina
+
+LHA:
+  name: ML_LHA
+  эхэнд: init
+  дунд: medi
+
+ZHI:
+  name: ML_ZHI
+
+CHI:
+  name: ML_CHI
