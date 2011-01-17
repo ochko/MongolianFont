@@ -184,8 +184,8 @@ feature calt {
   lookup calt1 { 
   lookupflag IgnoreMarks;
     sub ML_UE.init' [ML_YA.medi1] [ML_I.medi] by ML_UE.init1;
-    sub @consonant_init ML_UE.medi' [ML_YA.medi1] [ML_I.medi] by ML_UE.medi;
     sub @consonant_init [ML_OE.medi ML_UE.medi]' by [ML_OE.medi1 ML_UE.medi1];
+    sub @consonant_init ML_UE.medi' [ML_YA.medi1] [ML_I.medi] by ML_UE.medi;
     sub ML_NA.medi1' @vowel_medi_fina by ML_NA.medi1;
     sub ML_NA.medi1' @consonant_medi_fina by ML_NA.medi;
     sub [ML_A.init ML_A.medi ML_E.init ML_E.medi ML_O.init ML_O.medi ML_U.init ML_U.medi ML_UE.init ML_UE.medi] ML_YA.medi1' ML_I.medi by ML_YA.medi;
