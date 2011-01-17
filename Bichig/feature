@@ -29,8 +29,8 @@ feature isol {
     sub ML_EE by ML_EE.isol;
     sub ML_QA by ML_QA.isol;
     sub ML_GA by ML_GA.isol;
-    sub ML_ZHI by ML-ZHI;
-    sub ML_CHI by ML-CHI;
+    sub ML_ZHI by ML_ZHI;
+    sub ML_CHI by ML_CHI;
   } isol1;
 language MNG ;
 } isol;
@@ -78,8 +78,8 @@ feature fina {
     sub ML_ZA by ML_ZA.fina;
     sub ML_HAA by ML_HAA.fina;
     sub ML_ZRA by ML_ZRA.fina;
-    sub ML_ZHI by ML-ZHI;
-    sub ML_CHI by ML-CHI;
+    sub ML_ZHI by ML_ZHI;
+    sub ML_CHI by ML_CHI;
   } fina1;
 language MNG ;
 } fina;
@@ -118,8 +118,8 @@ feature init {
     sub ML_HAA by ML_HAA.init;
     sub ML_ZRA by ML_ZRA.init;
     sub ML_LHA by ML_LHA.init;
-    sub ML_ZHI by ML-ZHI;
-    sub ML_CHI by ML-CHI;
+    sub ML_ZHI by ML_ZHI;
+    sub ML_CHI by ML_CHI;
   } init1;
 language MNG ;
 } init;
@@ -174,8 +174,8 @@ feature medi {
     sub ML_HAA by ML_HAA.medi;
     sub ML_ZRA by ML_ZRA.medi;
     sub ML_LHA by ML_LHA.medi;
-    sub ML_ZHI by ML-ZHI;
-    sub ML_CHI by ML-CHI;
+    sub ML_ZHI by ML_ZHI;
+    sub ML_CHI by ML_CHI;
   } medi1;
 language MNG ;
 } medi;
