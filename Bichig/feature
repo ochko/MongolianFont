@@ -4,9 +4,9 @@
 @consonant_medi=[ML_NA.medi1 ML_QA.medi1 ML_GA.medi1 ML_TA.medi1 ML_DA.medi1 ML_JA.medi1 ML_YA.medi1 ML_WA.medi1 ML_NA.medi2 ML_QA.medi2 ML_GA.medi2 ML_YA.medi2 ML_NA.medi3 ML_QA.medi3 ML_GA.medi3 ML_NA.medi1 ML_ANG.medi ML_QA.medi ML_GA.medi1 ML_MA.medi ML_LA.medi ML_SA.medi ML_SHA.medi ML_TA.medi ML_DA.medi1 ML_CHA.medi ML_JA.medi ML_YA.medi1 ML_RA.medi ML_WA.medi ML_TSA.medi ML_ZA.medi ML_HAA.medi ML_ZRA.medi ML_LHA.medi ML-ZHI ML-CHI];
 @consonant_medi_fina=[ML_NA.medi1 ML_QA.medi1 ML_GA.medi1 ML_TA.medi1 ML_DA.medi1 ML_JA.medi1 ML_YA.medi1 ML_WA.medi1 ML_NA.medi2 ML_QA.medi2 ML_GA.medi2 ML_YA.medi2 ML_NA.medi3 ML_QA.medi3 ML_GA.medi3 ML_NA.medi1 ML_ANG.medi ML_QA.medi ML_GA.medi1 ML_MA.medi ML_LA.medi ML_SA.medi ML_SHA.medi ML_TA.medi ML_DA.medi1 ML_CHA.medi ML_JA.medi ML_YA.medi1 ML_RA.medi ML_WA.medi ML_TSA.medi ML_ZA.medi ML_HAA.medi ML_ZRA.medi ML_LHA.medi ML-ZHI ML-CHI ML_GA.finafvs1 ML_GA.fina1 ML_SA.fina1 ML_DA.fina1 ML_WA.fina1 ML_SA.fina2 ML_NA.fina ML_ANG.fina ML_BA.fina ML_PA.fina ML_QA.medi ML_GA.fina ML_MA.fina ML_LA.fina ML_SA.fina ML_SHA.fina ML_TA.fina ML_DA.fina ML_CHA.fina ML_JA.fina ML_YA.fina ML_RA.fina ML_WA.fina ML_FA.fina ML_KA.fina ML_KHA.fina ML_TSA.fina ML_ZA.fina ML_HAA.fina ML_ZRA.fina];
 @male_vowel_medi_fina=[ML_A.medi ML_O.medi ML_U.medi ML_A.fina ML_O.fina ML_O.fina1 ML_U.fina];
-=[ML_A.fina1 ML_E.fina1];
 @fem_vowel_ee_init_medi=[ML_E.init ML_E.init1 ML_OE.init ML_UE.init ML_EE.init ML_E.medi ML_OE.medi ML_OE.medi1 ML_UE.medi ML_UE.medi1 ML_EE.medi];
 @male_vowel_init_medi=[ML_A.init ML_O.init ML_U.init ML_A.medi ML_A.medi1 ML_O.medi ML_O.medi1 ML_U.medi ML_U.medi1];
+=[ML_A.fina1 ML_E.fina1];
 
 feature aalt{
  feature isol;
@@ -205,8 +205,8 @@ feature calt {
     sub ML_QA.medi' [ML_A.medi ML_A.fina ML_O.medi ML_O.fina ML_U.medi ML_U.fina] by ML_QA.medi;
     sub ML_JA.init' MVS by ML_JA.medi1;
     sub [ML_A.fina ML_E.fina]' MVS by [ML_A.fina1 ML_E.fina1];
-    sub [ML_NA.medi ML_QA.medi ML_GA.medi ML_JA.medi ML_YA.medi ML_WA.medi]' MVS [ML_A.fina1 ML_E.fina1] by [ML_NA.medi2 ML_QA.medi3 ML_GA.medi2 ML_JA.medi1 ML_YA.medi2 ML_WA.fina1];
-    sub ML_NA.medi1' FVS1 MVS [ML_A.fina1 ML_E.fina1] by ML_NA.fina;
+    sub [ML_NA.medi ML_QA.medi ML_GA.medi ML_JA.medi ML_YA.medi ML_WA.medi]' MVS [ОРХИЦ.medi ОРХИЦ.fina] by [ML_NA.medi2 ML_QA.medi3 ML_GA.medi2 ML_JA.medi1 ML_YA.medi2 ML_WA.fina1];
+    sub ML_NA.medi1' FVS1 MVS [ОРХИЦ.medi ОРХИЦ.fina] by ML_NA.fina;
     sub NNBSP ML_A.medi' ML_CHA.medi by ML_A.титэм;
     sub NNBSP ML_I.medi ML_YA.medi1' by ML_YA.medi;
     sub NNBSP ML_YA.medi' [ML_I.medi ML_I.fina] by ML_YA.medi;
