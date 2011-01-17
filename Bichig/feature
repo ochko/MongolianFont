@@ -40,8 +40,8 @@ feature fina {
   lookupflag IgnoreMarks;
     sub ML_A FVS1 by ML_A.fina1;
     sub ML_E FVS1 by ML_E.fina1;
-    sub ML_O FVS1 by ML_O.fina1;
-    sub [ML_OE ML_UE] FVS1 by [ML_OE.fina1 ML_UE.fina1];
+    sub ML_O FVS1 by ML_O.medi;
+    sub [ML_OE ML_UE] FVS1 by [ML_OE.адагт1 ML_UE.адагт1];
     sub ML_BA FVS1 by ML_BA.fina1;
     sub ML_GA FVS1 by ML_GA.finafvs1;
     sub ML_SA FVS1 by ML_SA.fina1;
@@ -207,7 +207,7 @@ feature calt {
     sub [ML_A.fina ML_E.fina]' MVS by [ML_A.fina1 ML_E.fina1];
     sub [ML_NA.medi ML_QA.medi ML_GA.medi ML_JA.medi ML_YA.medi ML_WA.medi]' MVS [ОРХИЦ.medi ОРХИЦ.fina] by [ML_NA.medi2 ML_QA.medi3 ML_GA.medi2 ML_JA.medi1 ML_YA.medi2 ML_WA.fina1];
     sub ML_NA.medi1' FVS1 MVS [ОРХИЦ.medi ОРХИЦ.fina] by ML_NA.fina;
-    sub NNBSP ML_A.medi' ML_CHA.medi by ML_A.титэм;
+    sub NNBSP ML_A.medi' ML_CHA.medi by ML_A.medi2;
     sub NNBSP ML_I.medi ML_YA.medi1' by ML_YA.medi;
     sub NNBSP ML_YA.medi' [ML_I.medi ML_I.fina] by ML_YA.medi;
     sub NNBSP [ML_DA.medi ML_TA.medi ML_LA.medi ML_NA.medi ML_YA.medi] ML_UE.medi' by ML_UE.medi;
@@ -267,8 +267,8 @@ feature calt {
     sub ML_GA.init' ML_UE.medi' by ML_GA_UE.init;
     sub ML_GA.medi' ML_UE.medi' by ML_GA_UE.medi;
     sub ML_GA.medi' ML_OE.fina' by ML_GA_OE.fina;
-    sub ML_GA.init' ML_OE.fina1' by ML_GA_OE.isolfina1;
-    sub ML_GA.medi' ML_OE.fina1' by ML_GA_OE.isolfina1;
+    sub ML_GA.init' ML_OE.адагт1' by ML_GA_OE.isolfina1;
+    sub ML_GA.medi' ML_OE.адагт1' by ML_GA_OE.isolfina1;
     sub ML_GA.init' ML_EE.medi' by ML_GA_EE.initmedi;
     sub ML_GA.medi' ML_EE.medi' by ML_GA_EE.initmedi;
     sub ML_GA.init' ML_EE.fina' by ML_GA_EE.isolfina;
@@ -277,13 +277,13 @@ feature calt {
     sub ML_QA.medi' ML_E.medi1' by ML_QA_E.initmedi1;
     sub ML_QA.init' ML_E.fina1' by ML_QA_E.isolfina1;
     sub ML_QA.medi' ML_E.fina1' by ML_QA_E.isolfina1;
-    sub ML_QA.init' ML_I.medi1' by ML_QA_I.initmedi1;
-    sub ML_QA.medi' ML_I.medi1' by ML_QA_I.initmedi1;
+    sub ML_QA.init' ML_I.дунд1' by ML_QA_I.initmedi1;
+    sub ML_QA.medi' ML_I.дунд1' by ML_QA_I.initmedi1;
     sub ML_QA.init' ML_I.fina1' by ML_QA_I.isolfina1;
     sub ML_QA.medi' ML_I.fina1' by ML_QA_I.isolfina1;
     sub ML_QA.init' ML_OE.medi1' by ML_QA_OE.init1;
     sub ML_QA.medi' ML_OE.medi1' by ML_QA_OE.medi1;
-    sub ML_QA.medi' ML_OE.fina1' by ML_QA_OE.fina1;
+    sub ML_QA.medi' ML_OE.адагт1' by ML_QA_OE.fina1;
     sub ML_QA.init' ML_OE.fina' by ML_QA_OE.isolfina;
     sub ML_QA.medi' ML_OE.fina' by ML_QA_OE.isolfina;
     sub ML_QA.init' ML_EE.medi' by ML_QA_EE.initmedi;
