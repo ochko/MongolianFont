@@ -207,7 +207,7 @@ feature calt {
     sub [ML_A.fina ML_E.fina]' MVS by [ML_A.fina1 ML_E.fina1];
     sub [ML_NA.medi ML_QA.medi ML_GA.medi ML_JA.medi ML_YA.medi ML_WA.medi]' MVS [ML_A.fina1 ML_E.fina1] by [ML_NA.medi2 ML_QA.medi3 ML_GA.medi2 ML_JA.medi1 ML_YA.medi2 ML_WA.fina1];
     sub ML_NA.medi1' FVS1 MVS [ML_A.fina1 ML_E.fina1] by ML_NA.fina;
-    sub NNBSP ML_A.medi' ML_CHA.medi by ML_A.medi2;
+    sub NNBSP ML_A.medi' ML_CHA.medi by ML_A.титэм;
     sub NNBSP ML_I.medi ML_YA.medi1' by ML_YA.medi;
     sub NNBSP ML_YA.medi' [ML_I.medi ML_I.fina] by ML_YA.medi;
     sub NNBSP [ML_DA.medi ML_TA.medi ML_LA.medi ML_NA.medi ML_YA.medi] ML_UE.medi' by ML_UE.medi;
