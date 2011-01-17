@@ -41,7 +41,7 @@ feature fina {
     sub ML_A FVS1 by ML_A.fina1;
     sub ML_E FVS1 by ML_E.fina1;
     sub ML_O FVS1 by ML_O.medi;
-    sub [ML_OE ML_UE] FVS1 by [ML_OE.адагт1 ML_UE.адагт1];
+    sub [ML_OE ML_UE] FVS1 by [ML_OE.fina1 ML_UE.fina1];
     sub ML_BA FVS1 by ML_BA.fina1;
     sub ML_GA FVS1 by ML_GA.finafvs1;
     sub ML_SA FVS1 by ML_SA.fina1;
