@@ -6,7 +6,6 @@
 @male_vowel_medi_fina=[ML_A.medi ML_O.medi ML_U.medi ML_A.fina ML_O.fina ML_O.fina1 ML_U.fina];
 @fem_vowel_ee_init_medi=[ML_E.init ML_E.init1 ML_OE.init ML_UE.init ML_EE.init ML_E.medi ML_OE.medi ML_OE.medi1 ML_UE.medi ML_UE.medi1 ML_EE.medi];
 @male_vowel_init_medi=[ML_A.init ML_O.init ML_U.init ML_A.medi ML_O.medi ML_U.medi];
-=[ML_A.fina1 ML_E.fina1];
 
 feature aalt{
  feature isol;
@@ -100,6 +99,8 @@ feature init {
     sub [ML_OE ML_UE] by [ML_OE.init ML_UE.init];
     sub ML_EE by ML_EE.init;
     sub ML_NA by ML_NA.init;
+    sub ML_BA by ML_BA.init;
+    sub ML_PA by ML_PA.init;
     sub ML_QA by ML_QA.init;
     sub ML_GA by ML_GA.init;
     sub ML_MA by ML_MA.init;
@@ -113,6 +114,9 @@ feature init {
     sub ML_YA by ML_YA.init;
     sub ML_RA by ML_RA.init;
     sub ML_WA by ML_WA.init;
+    sub ML_FA by ML_FA.init;
+    sub ML_KA by ML_KA.init;
+    sub ML_KHA by ML_KHA.init;
     sub ML_TSA by ML_TSA.init;
     sub ML_ZA by ML_ZA.init;
     sub ML_HAA by ML_HAA.init;
@@ -156,6 +160,8 @@ feature medi {
     sub ML_EE by ML_EE.medi;
     sub ML_NA by ML_NA.medi1;
     sub ML_ANG by ML_ANG.medi;
+    sub ML_BA by ML_BA.medi;
+    sub ML_PA by ML_PA.medi;
     sub ML_QA by ML_QA.medi;
     sub ML_GA by ML_GA.medi1;
     sub ML_MA by ML_MA.medi;
@@ -169,6 +175,9 @@ feature medi {
     sub ML_YA by ML_YA.medi1;
     sub ML_RA by ML_RA.medi;
     sub ML_WA by ML_WA.medi;
+    sub ML_FA by ML_FA.medi;
+    sub ML_KA by ML_KA.medi;
+    sub ML_KHA by ML_KHA.medi;
     sub ML_TSA by ML_TSA.medi;
     sub ML_ZA by ML_ZA.medi;
     sub ML_HAA by ML_HAA.medi;
@@ -205,8 +214,8 @@ feature calt {
     sub ML_QA.medi' [ML_A.medi ML_A.fina ML_O.medi ML_O.fina ML_U.medi ML_U.fina] by ML_QA.medi;
     sub ML_JA.init' MVS by ML_JA.medi1;
     sub [ML_A.fina ML_E.fina]' MVS by [ML_A.fina1 ML_E.fina1];
-    sub [ML_NA.medi ML_QA.medi ML_GA.medi ML_JA.medi ML_YA.medi ML_WA.medi]' MVS [ОРХИЦ.medi ОРХИЦ.fina] by [ML_NA.medi2 ML_QA.medi3 ML_GA.medi2 ML_JA.medi1 ML_YA.medi2 ML_WA.fina1];
-    sub ML_NA.medi1' FVS1 MVS [ОРХИЦ.medi ОРХИЦ.fina] by ML_NA.fina;
+    sub [ML_NA.medi ML_QA.medi ML_GA.medi ML_JA.medi ML_YA.medi ML_WA.medi]' MVS [ML_A.fina1 ML_E.fina1] by [ML_NA.medi2 ML_QA.medi3 ML_GA.medi2 ML_JA.medi1 ML_YA.medi2 ML_WA.fina1];
+    sub ML_NA.medi1' FVS1 MVS [ML_A.fina1 ML_E.fina1] by ML_NA.fina;
     sub NNBSP ML_A.medi' ML_CHA.medi by ML_A.medi2;
     sub NNBSP ML_I.medi ML_YA.medi1' by ML_YA.medi;
     sub NNBSP ML_YA.medi' [ML_I.medi ML_I.fina] by ML_YA.medi;
@@ -218,6 +227,7 @@ feature calt {
     sub ML_NA.medifvs1' @vowel_medi_fina by ML_NA.medi;
     sub @consonant_init ML_I.medi ML_GA.finafvs1' by ML_GA.fina;
     sub ML_DA.medifvs1' @consonant_medi_fina by ML_DA.medi1;
+    sub ML_BA.init' ML_OE.medi' by ML_BA_OE.init;
     sub ML_BA.init' ML_A.medi' by ML_BA_A.initmedi;
     sub ML_BA.medi' ML_A.medi' by ML_BA_A.initmedi;
     sub ML_BA.init' ML_A.fina' by ML_BA_A.isolfina;
@@ -230,13 +240,13 @@ feature calt {
     sub ML_BA.medi' ML_O.medi' by ML_BA_O.initmedi;
     sub ML_BA.init' ML_O.fina' by ML_BA_O.isolfina;
     sub ML_BA.medi' ML_O.fina' by ML_BA_O.isolfina;
-    sub ML_BA.init' ML_OE.medi' by ML_BA_OE.init;
     sub ML_BA.init' ML_OE.fina' by ML_BA_OE.isolfina;
     sub ML_BA.medi' ML_OE.fina' by ML_BA_OE.isolfina;
     sub ML_BA.init' ML_EE.medi' by ML_BA_EE.initmedi;
     sub ML_BA.medi' ML_EE.medi' by ML_BA_EE.initmedi;
     sub ML_BA.init' ML_EE.fina' by ML_BA_EE.isolfina;
     sub ML_BA.medi' ML_EE.fina' by ML_BA_EE.isolfina;
+    sub ML_PA.init' ML_OE.medi' by ML_PA_OE.init;
     sub ML_PA.init' ML_A.medi' by ML_PA_A.initmedi;
     sub ML_PA.medi' ML_A.medi' by ML_PA_A.initmedi;
     sub ML_PA.init' ML_A.fina' by ML_PA_A.isolfina;
@@ -249,7 +259,6 @@ feature calt {
     sub ML_PA.medi' ML_O.medi' by ML_PA_O.initmedi;
     sub ML_PA.init' ML_O.fina' by ML_PA_O.isolfina;
     sub ML_PA.medi' ML_O.fina' by ML_PA_O.isolfina;
-    sub ML_PA.init' ML_OE.medi' by ML_PA_OE.init;
     sub ML_PA.init' ML_OE.fina' by ML_PA_OE.isolfina;
     sub ML_PA.medi' ML_OE.fina' by ML_PA_OE.isolfina;
     sub ML_PA.init' ML_EE.medi' by ML_PA_EE.initmedi;
@@ -267,23 +276,23 @@ feature calt {
     sub ML_GA.init' ML_UE.medi' by ML_GA_UE.init;
     sub ML_GA.medi' ML_UE.medi' by ML_GA_UE.medi;
     sub ML_GA.medi' ML_OE.fina' by ML_GA_OE.fina;
-    sub ML_GA.init' ML_OE.адагт1' by ML_GA_OE.isolfina1;
-    sub ML_GA.medi' ML_OE.адагт1' by ML_GA_OE.isolfina1;
+    sub ML_GA.init' ML_OE.fina1' by ML_GA_OE.isolfina1;
+    sub ML_GA.medi' ML_OE.fina1' by ML_GA_OE.isolfina1;
     sub ML_GA.init' ML_EE.medi' by ML_GA_EE.initmedi;
     sub ML_GA.medi' ML_EE.medi' by ML_GA_EE.initmedi;
     sub ML_GA.init' ML_EE.fina' by ML_GA_EE.isolfina;
     sub ML_GA.medi' ML_EE.fina' by ML_GA_EE.isolfina;
+    sub ML_QA.medi' ML_OE.medi1' by ML_QA_OE.medi1;
+    sub ML_QA.medi' ML_OE.fina1' by ML_QA_OE.fina1;
+    sub ML_QA.init' ML_OE.medi1' by ML_QA_OE.init1;
     sub ML_QA.init' ML_E.medi1' by ML_QA_E.initmedi1;
     sub ML_QA.medi' ML_E.medi1' by ML_QA_E.initmedi1;
     sub ML_QA.init' ML_E.fina1' by ML_QA_E.isolfina1;
     sub ML_QA.medi' ML_E.fina1' by ML_QA_E.isolfina1;
-    sub ML_QA.init' ML_I.дунд1' by ML_QA_I.initmedi1;
-    sub ML_QA.medi' ML_I.дунд1' by ML_QA_I.initmedi1;
+    sub ML_QA.init' ML_I.medi1' by ML_QA_I.initmedi1;
+    sub ML_QA.medi' ML_I.medi1' by ML_QA_I.initmedi1;
     sub ML_QA.init' ML_I.fina1' by ML_QA_I.isolfina1;
     sub ML_QA.medi' ML_I.fina1' by ML_QA_I.isolfina1;
-    sub ML_QA.init' ML_OE.medi1' by ML_QA_OE.init1;
-    sub ML_QA.medi' ML_OE.medi1' by ML_QA_OE.medi1;
-    sub ML_QA.medi' ML_OE.адагт1' by ML_QA_OE.fina1;
     sub ML_QA.init' ML_OE.fina' by ML_QA_OE.isolfina;
     sub ML_QA.medi' ML_OE.fina' by ML_QA_OE.isolfina;
     sub ML_QA.init' ML_EE.medi' by ML_QA_EE.initmedi;
