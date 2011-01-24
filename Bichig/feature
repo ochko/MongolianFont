@@ -169,7 +169,7 @@ feature medi {
     sub ML_SA by ML_SA.medi;
     sub ML_SHA by ML_SHA.medi;
     sub ML_TA by ML_TA.medi;
-    sub ML_DA by ML_DA.medi1;
+    sub ML_DA by ML_DA.init1;
     sub ML_CHA by ML_CHA.medi;
     sub ML_JA by ML_JA.medi;
     sub ML_YA by ML_YA.medi1;
@@ -200,8 +200,8 @@ feature calt {
     sub [ML_A.init ML_A.medi ML_E.init ML_E.medi ML_O.init ML_O.medi ML_U.init ML_U.medi ML_UE.init1 ML_UE.medi] ML_YA.medi1' ML_I.medi by ML_YA.medi;
     sub ML_YA.medi1' @consonant_medi_fina by ML_YA.medi;
     sub ML_YA.medi1' @vowel_medi_fina by ML_YA.medi1;
-    sub ML_DA.medi1' @vowel_medi_fina by ML_DA.medi1;
-    sub ML_DA.medi1' @consonant_medi_fina by ML_DA.medi;
+    sub ML_DA.init1' @vowel_medi_fina by ML_DA.init1;
+    sub ML_DA.init1' @consonant_medi_fina by ML_DA.medi;
     sub ML_GA.init' @male_vowel_medi_fina by ML_GA.init;
     sub ML_GA.medi1' @male_vowel_medi_fina by ML_GA.medi1;
     sub [ML_A.init ML_A.medi ML_O.init ML_O.medi ML_U.init ML_U.medi] ML_GA.medi1' @consonant_medi_fina by ML_GA.medi;
@@ -222,11 +222,11 @@ feature calt {
     sub NNBSP [ML_DA.medi ML_TA.medi ML_LA.medi ML_NA.medi ML_YA.medi] ML_UE.medi' by ML_UE.medi;
     sub NNBSP [ML_U.medi ML_UE.medi]' [space NNBS] by [ML_U.fina ML_UE.fina];
     sub NNBSP [ML_U.medi ML_UE.medi]' [ML_NA.fina ML_DA.fina] by [ML_U.medi ML_UE.medi];
-    sub NNBSP ML_DA.medi' by ML_DA.medi1;
+    sub NNBSP ML_DA.medi' by ML_DA.init1;
     sub NNBSP ML_I.medi' [space NNBS] by ML_I.fina;
     sub ML_NA.medifvs1' @vowel_medi_fina by ML_NA.medi;
     sub @consonant_init ML_I.medi ML_GA.finafvs1' by ML_GA.fina;
-    sub ML_DA.medifvs1' @consonant_medi_fina by ML_DA.medi1;
+    sub ML_DA.medifvs1' @consonant_medi_fina by ML_DA.init1;
     sub ML_BA.init' ML_OE.medi' by ML_BA_OE.init;
     sub ML_BA.init' ML_A.medi' by ML_BA_A.initmedi;
     sub ML_BA.medi' ML_A.medi' by ML_BA_A.initmedi;
